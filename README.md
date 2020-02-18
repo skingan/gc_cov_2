@@ -7,12 +7,9 @@ Tool for generating coverage boxplots for different GC% windows.
 
 `R v3.4.1`
 
-`samtools v1.9`
-
 `bedtools 2.27.1`
 
-`pbmm2/current`
-
+`mosdepth/0.2.5`
 
 # Usage
 
@@ -29,12 +26,8 @@ Tool for generating coverage boxplots for different GC% windows.
 Copy config.json and cluster.config.sge.json to the folder you want to run in and edit.
 
 
-## Export path
-`export PATH=$PATH:{snakemake clone dir}:{snakemake clone dir/scripts}
-
-
 ## Run It Locally
-`snakemake -s /path/to/gc_cov_snake/Snakefile --configfile config.json -d $PWD`
+`snakemake -s Snakefile --configfile config.json`
 
 
 ## Run it on cluster
@@ -48,7 +41,7 @@ snakemake -j 10 --cluster-config /path/to/cluster.config.sge.json \
 
 1. Reference sequence in fasta format
 2. FAI index for reference
-3. HiFi reads in fasta
+3. index sorted BAM or reads mapped to reference
 
 
 # Output
