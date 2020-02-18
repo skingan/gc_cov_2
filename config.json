@@ -1,0 +1,7 @@
+{
+    "samples" : {
+        "JZ1"          : "Rice_JZ1_UL_MM1_NewCycleCond.mapped.bam"
+    },
+    "ref"  : "mh63rsii_pilon_trans.fasta",
+    "fai"  : "mh63rsii_pilon_trans.fasta.fai"
+}
